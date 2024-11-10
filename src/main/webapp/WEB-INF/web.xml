@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  
+  
+  <!-- create a servlet and servlet-mapping tag -->
+  <servlet>
+  
+  <!-- create servlet-name and servlet-class tag inside servlet tag  -->
+  <servlet-name>AddServlet</servlet-name>
+  <!-- must mention package name as well -->
+  <servlet-class>com.mahabir.AddServlet</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  
+  <!-- create servlet-name and url-pattern tag in servlet-mapping tag-->
+  <servlet-name>AddServlet</servlet-name>
+  <url-pattern>/add</url-pattern>
+  
+  </servlet-mapping>
+  
+  <!-- Create a servlet and servlet-mapping tag for SqServlet -->
+  <servlet>
+  <servlet-name>SqServlet</servlet-name>
+  <!-- must mention package name as well -->
+  <servlet-class>com.mahabir.SqServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  
+  <!-- create servlet-name and url-pattern tag in servlet-mapping tag-->
+  <servlet-name>SqServlet</servlet-name>
+  <url-pattern>/sq</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
